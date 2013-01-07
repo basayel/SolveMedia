@@ -15,7 +15,7 @@ module SolveMedia
                   :theme    => 'purple',
                   :lang     => 'en',
                   :size     => '300x150',
-                  :config   => SolveMedia::CONFIG,
+                  :config   => SolveMedia.CONFIG,
                   :use_SSL  => false
                   }.merge(options)
       

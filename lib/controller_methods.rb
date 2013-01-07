@@ -18,7 +18,7 @@ require 'net/http'
                   :timeout            => 5,
                   :model              => nil,
                   :error_message      => nil,
-                  :config             => SolveMedia::CONFIG
+                  :config             => SolveMedia.CONFIG
                 }.merge(options)
       
       #Send POST to SolveMedia
