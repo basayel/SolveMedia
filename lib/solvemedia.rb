@@ -16,7 +16,7 @@ module SolveMedia
   end
 
   def self.CONFIG
-    YAML.load_file(self.CONFIG_FILE) if File.exist?(self.CONFIG_FILE)
+    YAML.load_file(self.CONFIG_FILE)[Rails.env] if File.exist?(self.CONFIG_FILE)
   end
 
   def self.check_for_keys!
